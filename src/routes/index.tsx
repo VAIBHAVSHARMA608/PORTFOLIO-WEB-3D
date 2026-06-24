@@ -14,19 +14,8 @@ import { FaGithub as Github, FaLinkedin as Linkedin, FaInstagram as Instagram } 
 import vaibhavPhoto from "@/assets/vaibhav.jpg";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Vaibhav Sharma — Full-Stack Developer & Startup Co-Founder" },
-      { name: "description", content: "Vaibhav Sharma — Full-Stack Web Developer, B.Tech CSE student at CGC, co-founder of Kapstone Healthcare. 25+ projects across AI, healthcare, and SaaS." },
-      { property: "og:title", content: "Vaibhav Sharma — Full-Stack Developer" },
-      { property: "og:description", content: "Full-Stack Developer building modern AI-powered web products." },
-      { property: "og:url", content: "/" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
   component: Portfolio,
 });
-
 const nav = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
